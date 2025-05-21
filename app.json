@@ -1,0 +1,83 @@
+{
+  "expo": {
+    "name": "FE",
+    "slug": "FE",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.psm3464.FE",
+      "jsEngine": "hermes",
+      "infoPlist": {
+        "NSCameraUsageDescription": "동영상을 촬영하기 위해 카메라 접근 권한이 필요합니다.",
+        "NSMicrophoneUsageDescription": "동영상 촬영 시 오디오 녹음을 위해 마이크 접근 권한이 필요합니다.",
+        "NSPhotoLibraryUsageDescription": "촬영한 동영상을 저장하기 위해 사진 라이브러리 접근 권한이 필요합니다.",
+        "NSPhotoLibraryAddUsageDescription": "촬영한 동영상을 저장하기 위해 사진 라이브러리 접근 권한이 필요합니다."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.psm3464.FE",
+      "jsEngine": "hermes",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.MEDIA_LIBRARY",
+        "android.permission.ACCESS_MEDIA_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "동영상을 촬영하기 위해 카메라 접근 권한이 필요합니다.",
+          "microphonePermission": "동영상 촬영 시 오디오 녹음을 위해 마이크 접근 권한이 필요합니다.",
+          "recordAudioAndroid": true
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "촬영한 동영상을 저장하기 위해 사진 라이브러리 접근 권한이 필요합니다.",
+          "savePhotosPermission": "촬영한 동영상을 저장하기 위해 사진 라이브러리 접근 권한이 필요합니다.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "갤러리에서 동영상을 선택하기 위해 접근 권한이 필요합니다.",
+          "cameraPermission": "동영상을 촬영하기 위해 카메라 접근 권한이 필요합니다."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "2067d494-4a29-4c95-bf03-86e90ef1338c"
+      }
+    },
+    "owner": "psm3464",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/2067d494-4a29-4c95-bf03-86e90ef1338c"
+    }
+  }
+}
